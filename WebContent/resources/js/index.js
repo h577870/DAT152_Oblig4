@@ -2,11 +2,16 @@
 
 import { Registration } from './registration.js'
 
-let root = document.getElementsByClassName('container')[0]
-const formbutton = document.getElementById('index-submit')
+const formbutton = document.getElementById('main-page-form')
 
-formbutton.addEventListener('click', () => {
-	let registration = new Registration(root)
-	registration._fill(root, null)
-	registration._add(this)
-})
+formbutton.addEventListener('submit', () => {
+	let registration = new Registration()
+	registration._fill(null)
+	localStorage.setItem("registration", JSON.stringify(registration))
+}, true)
+
+const domcontent = window
+domcontent.addEventListener("DOMContentLoaded", () => {
+	const result = JSON.parse(localStorage.getItem('registration'))
+	registration._add(result)
+}, true)
