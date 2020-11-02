@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="resources/js/confirmation.js" defer></script>
+</head>
+<body>
+<div id="container">
+	<header>
+		<h1>
+			<a href="index.html">Teknikk Car Rental</a>
+		</h1>
+		<h2>Detaljer om din ordre: </h2>
+	</header>
+	<nav>
+		<article>
+			<table id="confirm-order">
+				<tr>
+					<th>Sted: </th><td> <p id="location-conf"></p></td>
+				</tr>
+				<tr>
+					<th>Biltype: </th><td><p id="car-conf"></p></td>
+				</tr>
+				<tr>
+					<th>Dato og tid for henting: </th><td><p id="pickup-conf"></p></td>
+				</tr>
+				<tr>
+					<th>Dato og tid for tilbakelevering: </th><td><p id="dropoff-conf"></p></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="result.html"><button type="submit" id="conf_button">Bekreft</button></a>
+					</td>
+					<td>
+						<a href="rentcar.html"><button type="submit" id="change_button">Endre din bestilling</button></a>
+					</td>
+				</tr>
+			</table>
+		</article>
+	</nav>
+</div>
+</body>
+</html>

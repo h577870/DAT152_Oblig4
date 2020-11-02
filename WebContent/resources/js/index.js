@@ -9,9 +9,3 @@ formbutton.addEventListener('submit', () => {
 	registration._fill(null)
 	localStorage.setItem("registration", JSON.stringify(registration))
 }, true)
-
-const domcontent = window
-domcontent.addEventListener("DOMContentLoaded", () => {
-	const result = JSON.parse(localStorage.getItem('registration'))
-	registration._add(result)
-}, true)

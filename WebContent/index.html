@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 <head>
 <meta charset="UTF-8">
 <title>Car Rental - Front Page</title>
@@ -47,14 +47,14 @@
 	<div class="main" id='main-content'>
 		<nav class="nav-form">
 			<article class="article-form">
-				<form method="post" id="main-page-form" action="result.html">
+				<form method="post" id="main-page-form" action="confirmation.html">
 					<label for="location">Sted (by, land eller flyplasskode):</label>
-					<input type="text" id="location" value="e.g. Bergen" onfocus="this.value=''" class="location-form" required>
+					<input type="text" id="location" value="e.g. Bergen" onfocus="this.value=''" class="location-form" required aria-required="true">
 					<br>
 					<label for="pickup-date">Hentes:</label>
-					<input class="date-form" type="date" id="pickup-date" required>
+					<input class="date-form" type="date" id="pickup-date" required aria-required="true">
 					<label for="pickup-time">Kl.:</label>
-					<select class="time-form" onfocus="this.value=''" id="pickup-time">
+					<select class="time-form" onfocus="this.value=''" id="pickup-time" required aria-required="true">
 						<option value="00:00">00:00</option>
 						<option value="01:00">01:00</option>
 						<option value="02:00">02:00</option>
@@ -82,9 +82,9 @@
 					</select>
 					<br>
 					<label for="dropoff-date">Leveres:</label>
-					<input class="date-form" type="date" id="dropoff-date" required>
+					<input class="date-form" type="date" id="dropoff-date" required aria-required="true">
 					<label for="dropoff-time">Kl.:</label>
-					<select class="time-form" onfocus="this.value=''" id="dropoff-time">
+					<select class="time-form" onfocus="this.value=''" id="dropoff-time" required aria-required="true">
 						<option value="00:00">00:00</option>
 						<option value="01:00">01:00</option>
 						<option value="02:00">02:00</option>
@@ -112,7 +112,7 @@
 					</select>
 					<br><br>
 					<label for="car-type">Biltype:</label>
-					<select class="car-form" id="car-type" required>
+					<select class="car-form" id="car-type" required aria-required="true">
 						<option value="A">Type A</option>
 						<option value="B">Type B</option>
 						<option value="C">Type C</option>

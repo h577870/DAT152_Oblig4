@@ -35,13 +35,4 @@ export class Registration {
 		return Math.floor((Math.random() * 100000) + 1).toString()
 	}
 	
-	_add() {
-		document.getElementById('location').textContent = this.location
-		document.getElementById('cartype').textContent = this.car_type
-		document.getElementById('pickupdate').textContent = this.pickup_date
-		document.getElementById('pickuptime').textContent = this.pickup_time
-		document.getElementById('dropoffdate').textContent = this.dropoff_date
-		document.getElementById('dropofftime').textContent = this.dropoff_time
-	}
-	
 }
