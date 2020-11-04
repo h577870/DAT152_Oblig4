@@ -28,18 +28,6 @@
 	.container-body {
 		width: 150%;
 	}
-	.headline h1 {
-		position: absolute;
-		left: 100px;
-		top: 150px;
-	}
-	
-.car-container {
-    position: relative;
-    display: block;
-    float: left;
-    width: 100%;
-}
 
 .cars {
     display: inline-block;
@@ -47,12 +35,20 @@
     border: 1px solid blue;
 }
 
+.carname {
+	font-size: 60px;
+	width: 2px;
+	height: 2px;
+}
+
+.car div {
+	display: inline-block;
+}
+
 .car {
-    box-sizing: border-box;
-    width: 20%;
-    float: left;
+    display: block;
+    width: 200%;
+    float: middle;
     border: 1px solid black;
 }
-	
-
 }

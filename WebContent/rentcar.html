@@ -15,13 +15,13 @@
 		<nav class="nav-form">
 			<article class="article-form">
 				<form method="post" id="rentcar-page-form" action="confirmation.html">
-					<label for="location">Sted (by, land eller flyplasskode):</label>
-					<input type="text" id="location" value="e.g. Bergen" onfocus="this.value=''" class="location-form" required aria-required="true">
+					<label id="location">Sted (by, land eller flyplasskode):</label>
+					<input type="text" id="location" value="e.g. Bergen" aria-labelledby="location" onfocus="this.value=''" class="location-form" required>
 					<br>
-					<label for="pickup-date">Hentes:</label>
-					<input class="date-form" type="date" id="pickup-date" required aria-required="true">
-					<label for="pickup-time">Kl.:</label>
-					<select class="time-form" onfocus="this.value=''" id="pickup-time" required aria-required="true">
+					<label id="pickup-date">Hentes:</label>
+					<input class="date-form" aria-labelledby="pickup-date" type="date" id="pickup-date" required>
+					<label id="pickup-time">Kl.:</label>
+					<select class="time-form" aria-labelledby="pickup-time" onfocus="this.value=''" id="pickup-time" required>
 						<option value="00:00">00:00</option>
 						<option value="01:00">01:00</option>
 						<option value="02:00">02:00</option>
@@ -48,10 +48,10 @@
 						<option value="23:00">23:00</option>
 					</select>
 					<br>
-					<label for="dropoff-date">Leveres:</label>
-					<input class="date-form" type="date" id="dropoff-date" required aria-required="true">
-					<label for="dropoff-time">Kl.:</label>
-					<select class="time-form" onfocus="this.value=''" id="dropoff-time" required aria-required="true">
+					<label id="dropoff-date">Leveres:</label>
+					<input class="date-form" aria-labelledby="dropoff-date" type="date" id="dropoff-date" required>
+					<label id="dropoff-time">Kl.:</label>
+					<select class="time-form" aria-labelledby="dropoff-time" onfocus="this.value=''" id="dropoff-time" required>
 						<option value="00:00">00:00</option>
 						<option value="01:00">01:00</option>
 						<option value="02:00">02:00</option>
@@ -78,8 +78,8 @@
 						<option value="23:00">23:00</option>
 					</select>
 					<br><br>
-					<label for="car-type">Biltype:</label>
-					<select class="car-form" id="car-type" required aria-required="true">
+					<label id="car-type">Biltype:</label>
+					<select class="car-form" aria-labelledby="car-type" id="car-type" required>
 						<option value="A">Type A</option>
 						<option value="B">Type B</option>
 						<option value="C">Type C</option>
@@ -87,7 +87,7 @@
 						<option value="V">Type V</option>
 					</select>
 					<br>
-					<input type="submit" value="Send inn" id="index-submit">
+					<input type="submit" value="Send inn" id="index-submit" role="button">
 				</form>
 			</article>
 		</nav>

@@ -6,39 +6,40 @@
 <script src="resources/js/confirmation.js" defer></script>
 </head>
 <body>
-<div id="container">
+<nav role="main">
+	<div id="container">
 	<header>
 		<h1>
-			<a href="index.html">Teknikk Car Rental</a>
+			<a href="index.html" tabindex="0">Teknikk Car Rental</a>
 		</h1>
 		<h2>Detaljer om din ordre: </h2>
 	</header>
-	<nav>
+	<!-- Gjøre denne tab-able? -->
 		<article>
-			<table id="confirm-order">
-				<tr>
-					<th>Sted: </th><td> <p id="location-conf"></p></td>
-				</tr>
-				<tr>
-					<th>Biltype: </th><td><p id="car-conf"></p></td>
-				</tr>
-				<tr>
-					<th>Dato og tid for henting: </th><td><p id="pickup-conf"></p></td>
-				</tr>
-				<tr>
-					<th>Dato og tid for tilbakelevering: </th><td><p id="dropoff-conf"></p></td>
-				</tr>
-				<tr>
-					<td>
-						<a href="result.html"><button type="submit" id="conf_button">Bekreft</button></a>
-					</td>
-					<td>
-						<a href="rentcar.html"><button type="submit" id="change_button">Endre din bestilling</button></a>
-					</td>
-				</tr>
-			</table>
+			<div id="confirm-order">
+				<div id="location" tabindex="0">
+					<label id="sted">Sted: </label><p id="location-conf" aria-labelledby="sted"></p>
+				</div>
+				<div id="cartype" tabindex="0">
+					<label id="biltype">Biltype: </label><p id="car-conf" aria-labelledby="biltype"></p>
+				</div>
+				<div id="date-pickup" tabindex="0">
+					<label id="henting">Dato og tid for henting: </label><p id="pickup-conf" aria-labelledby="henting"></p>
+				</div>
+				<div id="date-dropoff" tabindex="0">
+					<label id="levering">Dato og tid for tilbakelevering:</label><p id="dropoff-conf" aria-labelledby="levering"></p>
+				</div>
+				<div id="buttons">
+					<div id="button" tabindex="-1">
+						<a href="result.html"><button type="submit" id="conf_button" role="button" aria-label="Bekreft">Bekreft</button></a>
+					</div>
+					<div id="button" tabindex="-1">
+						<a href="rentcar.html"><button type="submit" id="change_button" role="button" aria-label="Endre din bestilling">Endre din bestilling</button></a>
+					</div>
+				</div>
+			</div>
 		</article>
-	</nav>
-</div>
+	</div>
+</nav>
 </body>
 </html>

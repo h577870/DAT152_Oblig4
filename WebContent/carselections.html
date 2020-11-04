@@ -6,105 +6,48 @@
 <title>Car Selections</title>
 </head>
 <body>
+<nav role="main">
 <div id="container">
 	<header>
 		<h1 class="top-header">
 			<a href="index.html">Teknikk Car Rental</a>
 		</h1>
 	</header>
-	<div class="car-container">
-		<div class="cars">
+	<div class="cars">
 		<div class="carselection-headline">Bilutvalg:</div>
 			<br>
-			<div class="car">
-				<table>
-				<tr>
-					<th>(A) Hyundai I10</th>
-				</tr>
-				<tr>
-					<td>
-						<div tabindex="0">
-						<a href="rentcar.html?car=a">
-							<img src="resources/img/A.jpg" width=200 height=200 alt="Car class A, the smallest car">
-						</a>
-						</div>
-					</td>
-				</tr>
-				</table>
+			<label class="carname" id="car-A">(A) Hyundai I10</label>
+			<div class="car" aria-labelledby="car-A" tabindex="-1" role="link">
+				<a href="rentcar.html?car=a" aria-label="Link som fører til bestillingsskjema for bilklasse A">
+					<img src="resources/img/A.jpg" width=200 height=200 alt="Car class A, the smallest car">
+				</a>
 			</div>
-		
-			<div class="car">
-				<table>
-				<tr>
-					<th>(B) Toyota Yaris</th>
-				</tr>
-				<tr>
-					<td>
-						<div tabindex="0">
-						<a href="rentcar.html?car=b">
-							<img src="resources/img/B.jpg" width=200 height=200 alt="Car class B, Yaris.">
-						</a>
-						</div>
-					</td>
-				</tr>
-				</table>
+			<label class="carname" id="car-B">(B) Toyota Yaris</label>
+			<div class="car" aria-labelledby="car-B" tabindex="-1" role="link">
+				<a href="rentcar.html?car=b" aria-label="Link som fører til bestillingsskjema for bilklasse B">
+					<img src="resources/img/B.jpg" width=200 height=200 alt="Car class B">
+				</a>
 			</div>
-		
-		
-			<div class="car">
-				<table>
-				<tr>
-					<th>(C) VW Golf</th>
-				</tr>
-				<tr>
-					<td>
-						<div tabindex="0">
-						<a href="rentcar.html?car=c">
-							<img src="resources/img/C.jpg" width=200 height=200 alt="Car class C, german quality.">
-						</a>
-						</div>
-					</td>
-				</tr>
-				</table>
+			<label class="carname" id="car-C">(C) Volkswagen Golf</label>
+			<div class="car" aria-labelledby="car-C" tabindex="-1" role="link">
+				<a href="rentcar.html?car=c" aria-label="Link som fører til bestillingsskjema for bilklasse C">
+					<img src="resources/img/C.jpg" width=200 height=200 alt="Car class C">
+				</a>
 			</div>
-	
-		
-			<div class="car">
-				<table>
-				<tr>
-					<th>(D) Volvo V40 </th>
-				</tr>
-				<tr>
-					<td>
-						<div tabindex="0">
-						<a href="rentcar.html?car=d">
-							<img src="resources/img/D.jpg" width=200 height=200 alt="Car class D, the best.">
-						</a>
-						</div>
-					</td>
-				</tr>
-				</table>
+			<label class="carname" id="car-D">(D) Volvo V40</label>
+			<div class="car" aria-labelledby="car-D" tabindex="-1" role="link">
+				<a href="rentcar.html?car=d" aria-label="Link som fører til bestillingsskjema for bilklasse D">
+					<img src="resources/img/D.jpg" width=200 height=200 alt="Car class D">
+				</a>
 			</div>
-		
-		
-			<div class="car">
-				<table>
-				<tr>
-					<th>(V) Logan</th>
-				</tr>
-				<tr>
-					<td>
-						<div tabindex="0">
-						<a href="rentcar.html?car=v">
-							<img src="resources/img/V.jpg" width=200 height=200 alt="Car class V, it's a van.">
-						</a>
-						</div>
-					</td>
-				</tr>
-				</table>
+			<label class="carname" id="car-V">(V) Logan</label>
+			<div class="car" aria-labelledby="car-V" tabindex="-1" role="link">
+				<a href="rentcar.html?car=v" aria-label="Link som fører til bestillingsskjema for bilklasse V">
+					<img src="resources/img/V.jpg" width=200 height=200 alt="Car class V">
+				</a>
 			</div>
 		</div>
 	</div>
-</div>
+</nav>
 </body>
 </html>
