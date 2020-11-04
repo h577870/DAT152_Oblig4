@@ -34,5 +34,25 @@
 		top: 150px;
 	}
 	
+.car-container {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.cars {
+    display: inline-block;
+    width: 80%;
+    border: 1px solid blue;
+}
+
+.car {
+    box-sizing: border-box;
+    width: 20%;
+    float: left;
+    border: 1px solid black;
+}
+	
 
 }
