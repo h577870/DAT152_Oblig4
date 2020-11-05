@@ -18,13 +18,14 @@ export class Registration {
 		let select_dropoffdate = document.getElementsByClassName('date-form')[1]
 		let select_pickuptime = document.getElementsByClassName('time-form')[0]
 		let select_dropofftime = document.getElementsByClassName('time-form')[1]
-		this.location = document.getElementById('location').value
+		let select_location = document.getElementsByClassName('location-form')[0]
 		if (car_type == null) {
 			this.car_type = select_car.value
 		} 
 		else { 
 			this.car_type = car_type 
 		}
+		this.location = select_location.value
 		this.pickup_time = select_pickuptime.value
 		this.dropoff_time = select_dropofftime.value
 		this.pickup_date = select_pickupdate.value

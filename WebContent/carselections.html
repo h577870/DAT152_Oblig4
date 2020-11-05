@@ -2,19 +2,32 @@
 <html lang="nb">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="resources/css/style.css">
+<link rel="stylesheet" href="resources/css/landscape.css" 
+media="only screen and (orientation: landscape)">
+<link rel="stylesheet" href="resources/css/portrait.css" 
+media="only screen and (orientation: portrait)">
 <title>Car Selections</title>
 </head>
 <body>
+
+<a id='skip-nav' class='screenreader-text' href='#main-content'>
+      Skip Navigation to main content</a>
+
 <nav role="main">
-<div id="container">
+<div id="container" class="container-body">
 	<header>
-		<h1 class="top-header">
-			<a href="index.html">Teknikk Car Rental</a>
-		</h1>
+		<div class="top-header">
+			<h1>
+				<a href="index.html">Teknikk Car Rental</a>
+			</h1>
+		</div>
 	</header>
 	<div class="cars">
-		<div class="carselection-headline">Bilutvalg:</div>
+		<div class="carselection-headline">
+			<h2>Bilutvalg:</h2>
+		</div>
 			<br>
 			<label class="carname" id="car-A">(A) Hyundai I10</label>
 			<div class="car" aria-labelledby="car-A" tabindex="-1" role="link">

@@ -1,6 +1,4 @@
 
-
-
 .screenreader-text {
   position: absolute;
   left: -999px;
@@ -17,17 +15,12 @@
   margin: auto;
 }
 .carselection-headline {
-	font-size: 32px;
+	font-size: 24px;
 }
 
 .top-header {
-	font-size: 54px;
+	font-size: 32px;
 }
-
-@media screen and (max-width: 1024px) {
-	.container-body {
-		width: 150%;
-	}
 
 .cars {
     display: inline-block;
@@ -35,8 +28,11 @@
     border: 1px solid blue;
 }
 
+.nav-bar {
+	margin-bottom: 10px;
+}
+
 .carname {
-	font-size: 60px;
 	width: 2px;
 	height: 2px;
 }
@@ -50,5 +46,4 @@
     width: 200%;
     float: middle;
     border: 1px solid black;
-}
 }

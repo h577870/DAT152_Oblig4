@@ -2,8 +2,13 @@
 <html lang="nb">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Car Rental - Front Page</title>
 <link rel="stylesheet" href="resources/css/style.css">
+<link rel="stylesheet" href="resources/css/landscape.css" 
+media="only screen and (orientation: landscape)">
+<link rel="stylesheet" href="resources/css/portrait.css" 
+media="only screen and (orientation: portrait)">
 <script type="module" src="resources/js/index.js" defer></script>
 </head>
 <body>
@@ -12,13 +17,15 @@
       Skip Navigation to main content</a>
       
 <div id="container" class="container-body">
-	<header class="headline">
+	<header>
+	<div class="top-header">
 		<h1>
 			<a href="index.html">Teknikk Car Rental</a>
 		</h1>
+	</div>
 	</header>
 	<div class="nav-bar">
-		<nav class="nav-header">
+		<nav>
 			<div class="article-header" role="tab">
 				<table>
 					<tr>
@@ -41,15 +48,13 @@
 				</table>
 			</div>
 		</nav>
-		
-	<!-- Skal være noe whitespace her, men fikser det med css. -->	
-		
+	</div>	
 	<div class="main" id='main-content'>
 		<nav class="nav-form">
 			<article class="article-form">
 				<form method="post" id="main-page-form" action="confirmation.html">
 					<label id="location">Sted (by, land eller flyplasskode):</label>
-					<input type="text" aria-labelledby="location" id="location" value="e.g. Bergen" onfocus="this.value=''" class="location-form" required>
+					<input type="text" aria-labelledby="location" class="location-form" required>
 					<br>
 					<label id="pickup-date">Hentes:</label>
 					<input class="date-form" aria-labelledby="pickup-date" type="date" id="pickup-date" required>
@@ -124,9 +129,7 @@
 				</form>
 			</article>
 		</nav>
-	</div>
-	</div>
 </div>
-
+</div>
 </body>
 </html>

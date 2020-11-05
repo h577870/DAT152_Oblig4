@@ -2,39 +2,57 @@
 <html lang="nb">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Insert title here</title>
 <script src="resources/js/confirmation.js" defer></script>
+<link rel="stylesheet" href="resources/css/style.css">
+<link rel="stylesheet" href="resources/css/landscape.css" 
+media="only screen and (orientation: landscape)">
+<link rel="stylesheet" href="resources/css/portrait.css" 
+media="only screen and (orientation: portrait)">
 </head>
 <body>
+
+<a id='skip-nav' class='screenreader-text' href='#main-content'>
+      Skip Navigation to main content</a>
+
 <nav role="main">
-	<div id="container">
+	<div id="container" class="container-body">
 	<header>
+	<div class="top-header">
 		<h1>
 			<a href="index.html" tabindex="0">Teknikk Car Rental</a>
 		</h1>
+	</div>
 		<h2>Detaljer om din ordre: </h2>
 	</header>
 	<!-- Gjøre denne tab-able? -->
 		<article>
 			<div id="confirm-order">
-				<div id="location" tabindex="0">
-					<label id="sted">Sted: </label><p id="location-conf" aria-labelledby="sted"></p>
+				<div id="location">
+					<label id="sted" tabindex="0" role="document">Sted: </label>
+					<p id="location-conf" aria-labelledby="sted" tabindex="0" role="document"></p>
 				</div>
-				<div id="cartype" tabindex="0">
-					<label id="biltype">Biltype: </label><p id="car-conf" aria-labelledby="biltype"></p>
+				<div id="cartype">
+					<label id="biltype" tabindex="0" role="document">Biltype: </label>
+					<p id="car-conf" aria-labelledby="biltype" tabindex="0" role="document"></p>
 				</div>
-				<div id="date-pickup" tabindex="0">
-					<label id="henting">Dato og tid for henting: </label><p id="pickup-conf" aria-labelledby="henting"></p>
+				<div id="date-pickup">
+					<label id="henting" tabindex="0" role="document">Dato og tid for henting: </label>
+					<p id="pickup-conf" aria-labelledby="henting" tabindex="0" role="document"></p>
 				</div>
-				<div id="date-dropoff" tabindex="0">
-					<label id="levering">Dato og tid for tilbakelevering:</label><p id="dropoff-conf" aria-labelledby="levering"></p>
+				<div id="date-dropoff">
+					<label id="levering" tabindex="0" role="document">Dato og tid for tilbakelevering:</label>
+					<p id="dropoff-conf" aria-labelledby="levering" tabindex="0" role="document"></p>
 				</div>
 				<div id="buttons">
 					<div id="button" tabindex="-1">
-						<a href="result.html"><button type="submit" id="conf_button" role="button" aria-label="Bekreft">Bekreft</button></a>
+						<a href="result.html">
+						<button type="submit" id="conf_button" aria-label="Bekreft">Bekreft</button></a>
 					</div>
 					<div id="button" tabindex="-1">
-						<a href="rentcar.html"><button type="submit" id="change_button" role="button" aria-label="Endre din bestilling">Endre din bestilling</button></a>
+						<a href="rentcar.html">
+						<button type="submit" id="change_button" aria-label="Endre din bestilling">Endre din bestilling</button></a>
 					</div>
 				</div>
 			</div>

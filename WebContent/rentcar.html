@@ -2,21 +2,33 @@
 <html lang="nb">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Insert title here</title>
 <script type="module" src="resources/js/rentcar.js" defer></script>
+<link rel="stylesheet" href="resources/css/style.css">
+<link rel="stylesheet" href="resources/css/landscape.css" 
+media="only screen and (orientation: landscape)">
+<link rel="stylesheet" href="resources/css/portrait.css" 
+media="only screen and (orientation: portrait)">
 </head>
 <body>
+
+<a id='skip-nav' class='screenreader-text' href='#main-content'>
+      Skip Navigation to main content</a>
+<nav role="main">
+	<div id="container" class="container-body">
 	<header>
+	<div class="top-header">
 		<h1>
 			<a href="index.html">Teknikk Car Rental</a>
 		</h1>
+	</div>
 	</header>
 	<div class="main" id='main-content'>
-		<nav class="nav-form">
 			<article class="article-form">
 				<form method="post" id="rentcar-page-form" action="confirmation.html">
 					<label id="location">Sted (by, land eller flyplasskode):</label>
-					<input type="text" id="location" value="e.g. Bergen" aria-labelledby="location" onfocus="this.value=''" class="location-form" required>
+					<input type="text" aria-labelledby="location" class="location-form" required>
 					<br>
 					<label id="pickup-date">Hentes:</label>
 					<input class="date-form" aria-labelledby="pickup-date" type="date" id="pickup-date" required>
@@ -78,8 +90,8 @@
 						<option value="23:00">23:00</option>
 					</select>
 					<br><br>
-					<label id="car-type">Biltype:</label>
-					<select class="car-form" aria-labelledby="car-type" id="car-type" required>
+					<label id="cartype">Biltype:</label>
+					<select class="car-form" aria-labelledby="cartype" id="car-type" required>
 						<option value="A">Type A</option>
 						<option value="B">Type B</option>
 						<option value="C">Type C</option>
@@ -87,10 +99,11 @@
 						<option value="V">Type V</option>
 					</select>
 					<br>
-					<input type="submit" value="Send inn" id="index-submit" role="button">
+					<input type="submit" value="Send inn" id="index-submit">
 				</form>
 			</article>
-		</nav>
 	</div>
+	</div>
+</nav>
 </body>
 </html>

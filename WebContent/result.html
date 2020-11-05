@@ -2,23 +2,33 @@
 <html lang="nb">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Insert title here</title>
 <script src="resources/js/result.js" defer></script>
+<link rel="stylesheet" href="resources/css/style.css">
+<link rel="stylesheet" href="resources/css/landscape.css" 
+media="only screen and (orientation: landscape)">
+<link rel="stylesheet" href="resources/css/portrait.css" 
+media="only screen and (orientation: portrait)">
 </head>
 <body>
+
+<a id='skip-nav' class='screenreader-text' href='#main-content'>
+      Skip Navigation to main content</a>
+
 <nav role="main">
 <div id="container" class="container-body">
-	<header class="headline">
+	<header>
+	<div class="top-header">
 		<h1>
 			<a href="index.html">Teknikk Car Rental</a>
 		</h1>
+	</div>
 	</header>
 		<article>
 			<p id="result"></p>
 			<br>
-			<a href="index.html">
-				<button type="submit" id="toindex" role="button">Tilbake til forsiden</button>
-			</a>
+			<input type="submit" id="toindex" action="index.html">Tilbake til forsiden</button>
 		</article>
 </div>
 </nav>

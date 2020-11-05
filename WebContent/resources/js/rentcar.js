@@ -7,7 +7,9 @@ const urlparams = new URLSearchParams(param)
 let result = null
 if (urlparams.get("car") != null) {
 	result = urlparams.get("car").toUpperCase()
-} else { result = 'a'.toUpperCase() }
+} else { 
+	result = 'a'.toUpperCase() 
+}
 
 const rentcarform = document.getElementById('rentcar-page-form')
 
