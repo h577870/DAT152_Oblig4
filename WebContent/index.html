@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Car Rental - Front Page</title>
+<title>Teknikk Car Rental - Hjem</title>
 <link rel="stylesheet" href="resources/css/style.css">
 <link rel="stylesheet" href="resources/css/landscape.css" 
 media="only screen and (orientation: landscape)">
@@ -26,22 +26,19 @@ media="only screen and (orientation: portrait)">
 	</header>
 	<div class="nav-bar">
 		<nav>
-			<div class="article-header" role="tab">
+			<div class="article-header">
 				<table>
 					<tr>
 						<th>Shortcuts:</th>
 					</tr>
-					<tr>
-						<td>
+					<tr role="tablist">
+						<td role="tab">
 							<a href="carselections.html"><span>Leie av bil</span></a>
 						</td>
-						<td>
+						<td role="tab">
 							<a href="error.html"><span>Spesielle tilbud</span></a>
 						</td>
-						<td>
-							<a href="error.html"><span>Produkter</span></a>
-						</td>
-						<td>
+						<td role="tab">
 							<a href="help.html"><span>Hjelp</span></a>
 						</td>
 					</tr>
@@ -57,12 +54,12 @@ media="only screen and (orientation: portrait)">
 					<!-- autocomplete address-level2 would typically be the city, village or town in the address.
 						Not sure if autocomplete is relevant in this case, given that renting a car often happens in a different city
 						from your address. -->
-					<input autocomplete="address-level2" type="text" aria-labelledby="location" class="location-form" required>
+					<input autocomplete="address-level2" type="text" aria-autocomplete="true" aria-labelledby="location" class="location-form" required>
 					<br>
-					<label id="pickup-date">Hentes:</label>
-					<input class="date-form" aria-labelledby="pickup-date" type="date" id="pickup-date" required>
-					<label id="pickup-time">Kl.:</label>
-					<select class="time-form" aria-labelledby="pickup-time" onfocus="this.value=''" id="pickup-time" required>
+					<label id="pickupdate">Hentes:</label>
+					<input class="date-form" aria-labelledby="pickupdate" type="date" id="pickup-date" required>
+					<label id="pickuptime">Kl.:</label>
+					<select class="time-form" aria-labelledby="pickuptime" onfocus="this.value=''" id="pickup-time" required>
 						<option value="00:00">00:00</option>
 						<option value="01:00">01:00</option>
 						<option value="02:00">02:00</option>
@@ -89,10 +86,10 @@ media="only screen and (orientation: portrait)">
 						<option value="23:00">23:00</option>
 					</select>
 					<br>
-					<label id="dropoff-date">Leveres:</label>
-					<input class="date-form" aria-labelledby="dropoff-date" type="date" id="dropoff-date" required>
-					<label id="dropoff-time">Kl.:</label>
-					<select class="time-form" aria-labelledby="dropoff-time" onfocus="this.value=''" id="dropoff-time" required>
+					<label id="dropoffdate">Leveres:</label>
+					<input class="date-form" aria-labelledby="dropoffdate" type="date" id="dropoff-date" required>
+					<label id="dropofftime">Kl.:</label>
+					<select class="time-form" aria-labelledby="dropofftime" onfocus="this.value=''" id="dropoff-time" required>
 						<option value="00:00">00:00</option>
 						<option value="01:00">01:00</option>
 						<option value="02:00">02:00</option>
@@ -119,8 +116,8 @@ media="only screen and (orientation: portrait)">
 						<option value="23:00">23:00</option>
 					</select>
 					<br><br>
-					<label id="car-type">Biltype:</label>
-					<select class="car-form" aria-labelledby="car-type" id="car-type" required>
+					<label id="cartype">Biltype:</label>
+					<select class="car-form" aria-labelledby="cartype" id="car-type" required>
 						<option value="A">Type A</option>
 						<option value="B">Type B</option>
 						<option value="C">Type C</option>

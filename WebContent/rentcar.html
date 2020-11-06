@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Insert title here</title>
+<title>Teknikk Car Rental - Lei Bil</title>
 <script type="module" src="resources/js/rentcar.js" defer></script>
 <link rel="stylesheet" href="resources/css/style.css">
 <link rel="stylesheet" href="resources/css/landscape.css" 
@@ -15,7 +15,7 @@ media="only screen and (orientation: portrait)">
 
 <a id='skip-nav' class='screenreader-text' href='#main-content'>
       Skip Navigation to main content</a>
-<nav role="main">
+<nav>
 	<div id="container" class="container-body">
 	<header>
 	<div class="top-header">
@@ -30,10 +30,10 @@ media="only screen and (orientation: portrait)">
 					<label id="location">Sted (by, land eller flyplasskode):</label>
 					<input autocomplete="address-level2" type="text" aria-labelledby="location" class="location-form" required>
 					<br>
-					<label id="pickup-date">Hentes:</label>
-					<input class="date-form" aria-labelledby="pickup-date" type="date" id="pickup-date" required>
-					<label id="pickup-time">Kl.:</label>
-					<select class="time-form" aria-labelledby="pickup-time" onfocus="this.value=''" id="pickup-time" required>
+					<label id="pickupdate">Hentes:</label>
+					<input class="date-form" aria-labelledby="pickupdate" type="date" id="pickup-date" required>
+					<label id="pickuptime">Kl.:</label>
+					<select class="time-form" aria-labelledby="pickuptime" onfocus="this.value=''" id="pickup-time" required>
 						<option value="00:00">00:00</option>
 						<option value="01:00">01:00</option>
 						<option value="02:00">02:00</option>
@@ -60,10 +60,10 @@ media="only screen and (orientation: portrait)">
 						<option value="23:00">23:00</option>
 					</select>
 					<br>
-					<label id="dropoff-date">Leveres:</label>
-					<input class="date-form" aria-labelledby="dropoff-date" type="date" id="dropoff-date" required>
-					<label id="dropoff-time">Kl.:</label>
-					<select class="time-form" aria-labelledby="dropoff-time" onfocus="this.value=''" id="dropoff-time" required>
+					<label id="dropoffdate">Leveres:</label>
+					<input class="date-form" aria-labelledby="dropoffdate" type="date" id="dropoff-date" required>
+					<label id="dropofftime">Kl.:</label>
+					<select class="time-form" aria-labelledby="dropofftime" onfocus="this.value=''" id="dropoff-time" required>
 						<option value="00:00">00:00</option>
 						<option value="01:00">01:00</option>
 						<option value="02:00">02:00</option>
