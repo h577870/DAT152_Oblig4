@@ -17,4 +17,10 @@
 		padding-right: 0.9%;
 		margin: auto;
 	}
+	
+	.carname {
+	font-size: 12px;
+	width: 2px;
+	height: 2px;
+	}
 }

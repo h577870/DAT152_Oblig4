@@ -25,7 +25,6 @@
 .cars {
     display: inline-block;
     width: 80%;
-    border: 1px solid blue;
 }
 
 .nav-bar {
@@ -45,5 +44,4 @@
     display: block;
     width: 200%;
     float: middle;
-    border: 1px solid black;
 }
